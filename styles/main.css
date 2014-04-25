@@ -136,7 +136,7 @@ form {
 .confirmation {
 	text-align: center;
 	color: #FFF;
-
+	margin-top: 80px;
 	display: none;  /* this block should initially show and hide on submit */
 
 }
