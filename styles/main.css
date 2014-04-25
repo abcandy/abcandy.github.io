@@ -9,9 +9,9 @@ html, body {
 	background-color: #FF6D8B;
 }
 
-h4 {
+h4, h5 {
 	font-weight: 300;
-	line-height: 14px;
+	line-height: 18px;
 }
 
 .background {
@@ -70,13 +70,13 @@ h4 {
 }
 
 form {
-	padding-top: 180px;
+	padding-top: 140px;
 	padding-right: 0;
 	z-index: 100;
 }
 
 .input {
-	width: 55%;
+	width: 65%;
 	height: 50px;
 	border: none;
 	border-radius: 10px 0px 0px 10px;
@@ -91,7 +91,7 @@ form {
 
 
 .button {
-	width: 45%;
+	width: 35%;
 	height: 50px;
 	color: #FFF;
 	font-family: 'Raleway', 'sans-serif';
