@@ -70,7 +70,7 @@ form {
 	z-index: 100;
 }
 
-input[type="text"] {
+.input {
 	width: 55%;
 	height: 50px;
 	border: none;
