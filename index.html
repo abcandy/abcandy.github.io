@@ -71,6 +71,8 @@
 	 <script>
 	 	$(".submit").submit(function(e){
 	 		e.preventDefault();
+	 		var username = $(".input").val();
+	 		$.post("http://infinite-hollows-9884.herokuapp.com/api/snapuser", {snapchat_username: username, sender_username: "abcandy"});
 	 		$(".sign-up").fadeOut(function(){
 	 			$(".confirmation").fadeIn();
 	 		});
