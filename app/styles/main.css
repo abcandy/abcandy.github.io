@@ -1,0 +1,167 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #FF6D8B;
+}
+
+.background {
+	position: absolute;
+	background: url(../images/candyboys.png) center bottom no-repeat;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+}
+
+.powered, .logo, .description, .submit {
+	display: block;
+	margin:  auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.powered, .logo, .description, .sign-up, .confirmation {
+	position: relative;
+	z-index: 100;
+}
+
+.powered {
+	width: 100%;
+	max-width: 255px;
+	padding-top: 40px;
+}
+
+.logo {   
+	width: 100%;
+	max-width: 500px;
+	padding-top: 50px;
+}
+
+.description{
+	width: 100%;
+	max-width: 580px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 60px;
+
+}
+
+
+.submit {
+	width:100%;
+	max-width: 525px;
+	
+}
+
+.submit input {
+	float: left;
+}
+
+form {
+	padding-top: 60px;
+	padding-right: 0;
+	z-index: 100;
+}
+
+input[type="text"] {
+	width: 55%;
+	height: 50px;
+	border: none;
+	border-radius: 10px 0px 0px 10px;
+	color: #F73448;
+	font-size: 1.2em;
+	font-weight: 300;
+	letter-spacing: 0.08em;
+	padding-left: 20px;
+}
+
+
+
+.button {
+	width: 45%;
+	height: 50px;
+	color: #FFF;
+	font-family: 'Raleway', 'sans-serif';
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;;
+	border: none;
+	border-radius: 0px 10px 10px 0px;
+	padding: 0;
+	background-image: -o-linear-gradient(-89deg, #F15A7C 0%, #D71F2D 100%);
+	background-image: -moz-linear-gradient(-89deg, #F15A7C 0%, #D71F2D 100%);
+	background-image: -ms-linear-gradient(-89deg, #F15A7C 0%, #D71F2D 100%);
+	background-image: linear-gradient(-179deg, #F15A7C 0%, #D71F2D 100%)
+}
+
+
+
+
+.image-block {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+
+
+}
+
+.image-block img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+.sign-up {
+	
+
+}
+
+.confirmation {
+	text-align: center;
+	color: #FFF;
+
+	display: none;  /* this block should initially show and hide on submit */
+
+}
+
+
+
+
+@media (max-width: 600px) {
+	.background {
+		opacity: .3;
+		-webkit-transition: all 1s ease-out;
+		-moz-transition: all 1s ease-out;
+		-ms-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		transition: all 1s ease-out;
+	}
+
+	html, body {
+		background-color: #51262f;
+		-webkit-transition: all 1s ease-out;
+		-moz-transition: all 1s ease-out;
+		-ms-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		transition: all 1s ease-out;
+	}
+}
+ 
+
+@media (max-width: 480px) {
+	.button span {
+		display: none;
+	}
+	
+	input[type="text"] {
+		font-size: .9em;
+	}
+}
